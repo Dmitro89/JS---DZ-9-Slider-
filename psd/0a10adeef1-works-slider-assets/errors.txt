@@ -1,0 +1,1 @@
+[2017-05-20 16:22:37] layer "+.png": Expected Either a default asset specification or a layer asset specification but "+" found.

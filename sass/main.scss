@@ -1,0 +1,84 @@
+@import "normalize";
+@import "variables";
+@import "mixin";
+@import "grid";
+
+
+*, *:after, *:before{
+	@include box-sizing;
+}
+
+body{
+	background: #fff;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	font-family: Poppins;
+	color:  #303030;
+	text-transform: uppercase;
+}
+
+.sl-text-1{
+	padding-top: 20px;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 0.76;
+	text-align: center;
+}
+
+.sl-text2{
+	margin: 10px 70px 30px 70px;
+	color:  #000000;
+	font-size: 50px;
+	line-height: 1.05;
+	text-align: center;
+}
+
+.sl-slide-show div{
+	margin: 0 5px;
+}
+
+.sl-slide-show{
+	position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 50px 0 45px;
+}
+
+.slick-arrow{
+	font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: url(../img/arrow2.png);
+    z-index: 5;
+
+    &.slick-next{
+    	position: absolute;
+    	right: 0;
+	}
+
+	&.slick-prev{
+		position: absolute;
+		left: 0;
+		margin-top: -25px;
+		transform: rotate(180deg);
+	}
+
+	&:hover,
+	&:focus{
+		opacity: .7;
+	}
+}
